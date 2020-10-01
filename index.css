@@ -1,0 +1,167 @@
+/* Commun */
+* {
+  margin: 0px;
+  padding: 0px;
+  font-family: 'Manrope', sans-serif;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: hsl(210, 46%, 95%);
+}
+
+/*Page*/
+.card {
+  background: white;
+  width: 850px;
+  height: 300px;
+  display: flex;
+  overflow: hidden;
+  box-shadow: 0px 0px 29px 0px rgba(0, 0, 0, 0.28);
+  border-radius: 10px;
+}
+
+.card_container_img {
+  width: 40%;
+  height: 100%;
+  background-image: url("images/drawers.jpg");
+  background-position: left;
+  background-size: cover;
+}
+
+.card_container_img img {
+  width: 100%;
+  height: 100%;
+}
+
+.card_container_droit {
+  width: 60%;
+}
+
+.padding_container_droit {
+  padding: 5%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.card_droit_top h1 {
+  font-weight: 700;
+  font-size: 1.5em;
+}
+
+.card_droit_top p {
+  margin-top: 5%;
+  font-size: 1em;
+}
+
+.card_droit_bottom {
+  margin-top: 2.5%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.personne {
+  display: flex;
+}
+
+.personne img {
+  width: 15%;
+  border-radius: 50%;
+}
+
+.personne p {
+  margin-left: 5%;
+}
+
+.personne p span:nth-child(1) {
+  font-weight: 700;
+}
+
+.personne p span:nth-child(2) {
+  font-weight: 500;
+  font-size: 0.9em
+}
+
+.partage {
+  border-radius: 50%;
+  background: hsl(210, 46%, 95%);
+  width: 35px;
+  height: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.bubble-share {
+  color: #fff;
+  border-radius: 3px;
+  margin-top: -55px;
+  margin-left: 357px;
+  position: absolute;
+  background: hsl(217, 19%, 35%);
+  display: flex;
+  padding: 7px 15px;
+}
+
+.bubble-share::after {
+  content: "";
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-top: 10px solid hsl(217, 19%, 35%);
+  position: absolute;
+  bottom: -10px;
+  margin-left: 60px;
+}
+
+@media screen and (max-width: 1100px) {
+  .card {
+    height: auto;
+    width: 300px;
+    flex-direction: column;
+  }
+
+  .card_container_img {
+    width: 100%;
+    height: auto;
+    min-height: 200px;
+    background-position: top;
+  }
+
+  .card_container_droit {
+    width: 100%;
+  }
+
+  .padding_container_droit {
+    padding: 0%;
+  }
+
+  .card_droit_top {
+    padding: 5%;
+  }
+
+  .card_droit_bottom {
+    padding: 4%;
+    justify-content: space-around;
+  }
+
+  .partage {
+    width: 50px;
+  }
+}
+
+@media screen and (max-height:600px) {
+  body {
+    overflow-y: scroll;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    height: auto;
+  }
+
+}
