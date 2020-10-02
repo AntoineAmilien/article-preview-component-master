@@ -54,11 +54,13 @@ body {
 .card_droit_top h1 {
   font-weight: 700;
   font-size: 1.5em;
+  color: hsl(217, 19%, 35%);
 }
 
 .card_droit_top p {
   margin-top: 5%;
   font-size: 1em;
+  color: hsl(214, 17%, 51%);
 }
 
 .card_droit_bottom {
@@ -80,13 +82,15 @@ body {
   margin-left: 5%;
 }
 
-.personne p span:nth-child(1) {
+.info-personne {
   font-weight: 700;
+  color: hsl(217, 19%, 35%);
 }
 
-.personne p span:nth-child(2) {
+.date{
   font-weight: 500;
-  font-size: 0.9em
+  font-size: 0.9em;
+  color: hsl(212, 23%, 69%);
 }
 
 .partage {
@@ -146,6 +150,14 @@ body {
     padding: 5%;
   }
 
+  .card_droit_top h1 {
+    font-size: 1.2em;
+  }
+
+  .card_droit_top p {
+    font-size: 0.8em;
+  }
+
   .card_droit_bottom {
     padding: 4%;
     justify-content: space-around;
@@ -153,6 +165,12 @@ body {
 
   .partage {
     width: 50px;
+  }
+
+
+  .personne img {
+    width: 20%;
+    border-radius: 50%;
   }
 }
 

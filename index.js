@@ -20,8 +20,9 @@
       container.innerHTML = "<div class='personne'>" +
         "<img src='images/avatar-michelle.jpg' alt='img personne'>" +
         "<p>" +
-        "<span>Michelle Appleton<br></span>" +
-        "<span>28 Jun 2020</span>" +
+        "<span class='info-personne'>Michelle Appleton</span>" +
+        "<br>"+
+        "<span class='date'>28 Jun 2020</span>" +
         "</p>" +
         "</div>" +
         "<a class='partage' onclick='partage()'>" +
@@ -76,9 +77,9 @@
         //ajouter la bulle
         container.insertAdjacentHTML('afterbegin', "<div id='bubble-share' class='bubble-share'>" +
           "<p style='letter-spacing: 0.3em; color:hsl(212, 23%, 69%)'>SHARE</p>" +
-          "<img style='margin-left:20px;' src='images/icon-facebook.svg' alt='facebook'>" +
-          "<img style='margin-left:10px;'  src='images/icon-twitter.svg' alt='twitter'>" +
-          "<img style='margin-left:10px;'  src='images/icon-pinterest.svg' alt='pinterest'>" +
+          "<img style='margin: auto 0; margin-left:20px;' src='images/icon-facebook.svg' alt='facebook'>" +
+          "<img style='margin: auto 0; margin-left:10px;'  src='images/icon-twitter.svg' alt='twitter'>" +
+          "<img style='margin: auto 0; margin-left:10px;'  src='images/icon-pinterest.svg' alt='pinterest'>" +
           "<br/>" +
           "</div>")
       } else {
